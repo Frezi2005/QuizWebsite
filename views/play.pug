@@ -1,0 +1,19 @@
+extends default
+
+block content
+    - for (var i = 0; i < quizInfo.roundsNumber; i++)
+        table(style="width: "+93/quizInfo.roundsNumber+"%")
+            thead   
+                th
+                    p Round #{i+1}
+            tbody
+            - for (var j = 1; j <= quizInfo.qForRound; j++)
+                tr 
+                    td 
+                        p #{j}
+    form(method="POST" action="/quiz")
+        input#quizCode.form-control(type="hidden" name="quizCode" value=""+quizInfo.code)
+        input#roundsNumber.form-control(type="hidden" name="roundsNumber" value=""+quizInfo.roundsNumber)
+        input#qForRound.form-control(type="hidden" name="qForRound" value=""+quizInfo.qForRound)
+        button.startQuiz(type="submit") Zacznij
+

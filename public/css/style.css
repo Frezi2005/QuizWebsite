@@ -1,0 +1,110 @@
+/* ==========================================================================
+   #STYLES
+   ========================================================================== */
+
+
+/**
+ *
+ * [1]: Inheriting box sizing slightly better best-practice
+ * https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+ *
+ * [2]: WordPress System font-stack
+ */
+
+
+/* RESET
+   ========================================================================== */
+
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit; /* [1] */
+  margin: 0;
+  padding: 0;
+}
+
+
+
+/* FONTS
+   ========================================================================== */
+
+body {
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif; /* [2] */
+}
+
+
+
+/* Header
+   ========================================================================== */
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  background-color: #525286;
+  color: #FFFFFF;
+  margin-bottom: 50px;
+}
+
+
+
+/* Homepage Container
+   ========================================================================== */
+
+.container {
+  width: 960px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+table {
+  border: 1px solid black;
+  float: left;
+  margin: 10px;
+}
+
+table td {
+  border: 1px solid black;
+}
+
+form {
+  float: left;
+}
+
+.question {
+  width: 300px;
+}
+
+.round {
+  border: 2px solid black;
+  margin: 5px;
+  display: inline-block;
+}
+
+.rounds {
+  text-align: center;
+}
+
+textarea {
+  resize: none;
+  overflow: hidden;
+  border: 1px solid black;
+  margin: 5px;
+}
+
+.roundAnswers {
+  border: 1px solid black;
+  margin: 5px;
+  display: inline-block;
+}
+
+.main {
+  text-align: center;
+}

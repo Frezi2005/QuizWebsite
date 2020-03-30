@@ -1,0 +1,11 @@
+extends default
+
+block content
+    .main
+         form(method="POST" action="/check")
+            - for(var i = 1; i <= roundsNumber; i++)
+                .roundAnswers
+                    p Wpisz odpowiedzi do rundy #{i}:
+                    textarea(id="round"+i name="round"+i, cols="30", rows=""+qForRound)
+            | <br> 
+            button.checkQuiz(type="submit") Wyślij

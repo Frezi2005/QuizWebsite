@@ -1,0 +1,7 @@
+extends default
+
+block content
+    form(method="GET" action="/play")
+        label(for="quizCode") Kod quizu:
+        input#quizCode.form-control(type="text" placeholder="Wpisz kod quizu" name="quizCode")
+        button.playQuiz(type="submit") Dalej

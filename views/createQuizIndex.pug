@@ -1,0 +1,15 @@
+extends default
+
+block content
+  div.container
+    form(method="POST" action="/process")
+        div.inputsGroup
+            label(for="teamsNumber") Liczba drużyn:
+            input#teamsNumber.form-control(type="number" placeholder="Wpisz liczbę drużyn" name="teamsNumber")
+        div.inputsGroup
+            label(for="roundsNumber") Liczba rund:
+            input#roundsNumber.form-control(type="number" placeholder="Wpisz liczbę rund" name="roundsNumber")
+        div.inputsGroup
+            label(for="qForRound") Liczba pytań na rundę:
+            input#qForRound.form-control(type="number" placeholder="Wpisz liczbę pytań na rundę" name="qForRound")
+        button.submitBtn(type="submit") Dalej

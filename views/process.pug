@@ -1,0 +1,10 @@
+extends default
+
+block content
+    .rounds
+        form(method="POST" action="/createQuiz")
+            -for (var j = 1; j <= quizInfo.roundsNumber; j++)
+                    - for(var i = 1; i <= quizInfo.qForRound; i++) 
+                        input(id="question"+i class="question").form-control(type="hidden" name="question"+i+"-"+j)
+            input#quizCode.form-control(type="hidden" name="quizCode" value=""+quizInfo.code)
+            button.submitBtn(type="submit") Zakończ

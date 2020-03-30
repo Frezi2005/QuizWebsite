@@ -1,0 +1,11 @@
+extends default
+
+block content
+  div.container
+    form(method="POST" action="/createQuizIndex")
+        button.createQuiz(type="submit") Stwórz
+    form(method="POST" action="/playQuizIndex")
+        button.playQuiz(type="submit") Zagraj
+
+
+        
