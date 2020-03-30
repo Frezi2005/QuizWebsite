@@ -1,12 +1,12 @@
 {
-  "name": "simple-node-website",
-  "version": "0.1.0",
-  "description": "A simple website built with Node, Express and Pug",
+  "name": "quiz_website",
+  "version": "1.0.0",
+  "description": "Simple quiz website made in express in pug",
   "main": "server.js",
   "scripts": {
     "start": ""
   },
-  "author": "Ayo Isaiah",
+  "author": "Frezi2005",
   "license": "MIT",
   "dependencies": {
     "body-parser": "^1.19.0",
